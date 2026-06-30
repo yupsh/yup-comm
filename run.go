@@ -110,9 +110,21 @@ func newApp(version string, stdout io.Writer, fs afero.Fs) *cli.Command {
 		// os.Exit, so the exit code stays testable.
 		ExitErrHandler: func(context.Context, *cli.Command, error) {},
 		Flags: []cli.Flag{
-			&cli.BoolFlag{Name: flagSuppressColumn1, Aliases: []string{"1"}, Usage: "suppress column 1 (lines unique to FILE1)"},
-			&cli.BoolFlag{Name: flagSuppressColumn2, Aliases: []string{"2"}, Usage: "suppress column 2 (lines unique to FILE2)"},
-			&cli.BoolFlag{Name: flagSuppressColumn3, Aliases: []string{"3"}, Usage: "suppress column 3 (lines common to both files)"},
+			&cli.BoolFlag{
+				Name:    flagSuppressColumn1,
+				Aliases: []string{"1"},
+				Usage:   "suppress column 1 (lines unique to FILE1)",
+			},
+			&cli.BoolFlag{
+				Name:    flagSuppressColumn2,
+				Aliases: []string{"2"},
+				Usage:   "suppress column 2 (lines unique to FILE2)",
+			},
+			&cli.BoolFlag{
+				Name:    flagSuppressColumn3,
+				Aliases: []string{"3"},
+				Usage:   "suppress column 3 (lines common to both files)",
+			},
 		},
 		Action: action(stdout, fs),
 	}
