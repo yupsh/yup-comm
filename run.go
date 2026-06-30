@@ -12,6 +12,8 @@ import (
 	"github.com/urfave/cli/v3"
 )
 
+const name = "comm"
+
 const (
 	flagSuppressColumn1 = "suppress-column-1"
 	flagSuppressColumn2 = "suppress-column-2"
@@ -51,7 +53,7 @@ func run(version string, args []string, _ io.Reader, stdout, stderr io.Writer, f
 	cmd.Writer = stdout
 	cmd.ErrWriter = stderr
 	if err := cmd.Run(context.Background(), translateColumnFlags(args)); err != nil {
-		_, _ = fmt.Fprintf(stderr, "comm: %v\n", err)
+		_, _ = fmt.Fprintf(stderr, name+": %v\n", err)
 		return 1
 	}
 	return 0
@@ -101,7 +103,7 @@ func expandColumnFlag(arg string) []string {
 
 func newApp(version string, stdout io.Writer, fs afero.Fs) *cli.Command {
 	return &cli.Command{
-		Name:            "comm",
+		Name:            name,
 		Version:         version,
 		Usage:           "compare two sorted files line by line",
 		UsageText:       usageText,

@@ -20,13 +20,13 @@ func TestRun(t *testing.T) {
 	}
 
 	cases := []struct {
+		files      map[string]string
 		name       string
 		version    string
-		args       []string
-		files      map[string]string
 		wantOut    string
-		wantCode   int
 		wantErrSub string
+		args       []string
+		wantCode   int
 	}{
 		{
 			name:    "default three columns",
