@@ -2,8 +2,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/destel/rill v0.8.1 h1:tJTit7kljOy2i2kqP4zHG1dUA452VpMK/myYRy5SY28=
 github.com/destel/rill v0.8.1/go.mod h1:srKuXzvGqINUEGYR5b/iwvW+L9/S35RxVHWGYbXNoO4=
-github.com/gloo-foo/cli v0.1.5 h1:ztf1L2c6jAZfxaNb/K0MNBSJtmlDUl5gBLKjNaGE+vw=
-github.com/gloo-foo/cli v0.1.5/go.mod h1:Nm02APt2I7EG4D/7+oG6BKcySC/cVLZiA82WrXC36Mw=
+github.com/gloo-foo/cli v0.1.8 h1:JAweubzrNHz/6cmWtYzlaBAlp3hmKoK2DcO+0rhYc8U=
+github.com/gloo-foo/cli v0.1.8/go.mod h1:Nm02APt2I7EG4D/7+oG6BKcySC/cVLZiA82WrXC36Mw=
 github.com/gloo-foo/cmd-comm v0.1.1 h1:7GDxXliXsGM8epcRe5MCN+MWZ8jaDdbb9OmKqQR/pEo=
 github.com/gloo-foo/cmd-comm v0.1.1/go.mod h1:21fkAI48Tlc6WxJ3yYBrHHqCjbS8QuVBxGQfT8LUCys=
 github.com/gloo-foo/fn v0.1.5 h1:I4IEFvQcS//qGA9wlHTF7PCyUSCwi5GugoelfMQ4Oeg=
