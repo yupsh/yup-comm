@@ -8,13 +8,13 @@ require (
 )
 
 require (
-	github.com/gloo-foo/framework v0.1.9 // indirect
-	github.com/gomatic/go-error v0.3.4 // indirect
+	github.com/gloo-foo/framework v0.1.13 // indirect
+	github.com/gomatic/go-error v0.3.7 // indirect
 )
 
 require (
 	github.com/destel/rill v0.8.1 // indirect
-	github.com/gloo-foo/cli v0.1.11
-	github.com/gloo-foo/cmd-comm v0.1.8
+	github.com/gloo-foo/cli v0.1.14
+	github.com/gloo-foo/cmd-comm v0.1.12
 	golang.org/x/text v0.40.0 // indirect
 )
