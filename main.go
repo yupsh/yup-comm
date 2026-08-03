@@ -47,9 +47,21 @@ var spec = clix.Spec{
 	Synopsis: synopsis,
 	Build:    build,
 	Flags: []urf.Flag{
-		&urf.BoolFlag{Name: flagSuppressColumn1, Usage: "suppress column 1 (lines unique to FILE1)"},
-		&urf.BoolFlag{Name: flagSuppressColumn2, Usage: "suppress column 2 (lines unique to FILE2)"},
-		&urf.BoolFlag{Name: flagSuppressColumn3, Usage: "suppress column 3 (lines common to both files)"},
+		&urf.BoolFlag{
+			Name:    flagSuppressColumn1,
+			Usage:   "suppress column 1 (lines unique to FILE1)",
+			Sources: urf.EnvVars("YUP_COMM_SUPPRESS_COLUMN_1"),
+		},
+		&urf.BoolFlag{
+			Name:    flagSuppressColumn2,
+			Usage:   "suppress column 2 (lines unique to FILE2)",
+			Sources: urf.EnvVars("YUP_COMM_SUPPRESS_COLUMN_2"),
+		},
+		&urf.BoolFlag{
+			Name:    flagSuppressColumn3,
+			Usage:   "suppress column 3 (lines common to both files)",
+			Sources: urf.EnvVars("YUP_COMM_SUPPRESS_COLUMN_3"),
+		},
 	},
 }
 
